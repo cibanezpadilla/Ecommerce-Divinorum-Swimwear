@@ -56,13 +56,37 @@ main {
   background-color: #3c573c;
 }
 
-.banner_season__image {
+.container-banner-divinorum {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container-banner-divinorum .title-banner {
+  position: absolute;
+  color: #fff;
+  font-weight: 200;
+}
+.container-banner-divinorum::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.35;
+}
+.container-banner-divinorum .imagen-banner {
   height: 85px;
   width: 100%;
+  object-fit: cover;
 }
-
-.banner-season__typo {
-  font-weight: 400;
+@media screen and (min-width: 768px) {
+  .container-banner-divinorum .imagen-banner {
+    height: 150px;
+  }
 }
 
 .caja-imagen {
@@ -71,7 +95,7 @@ main {
 .caja-imagen__botontext {
   position: absolute;
   bottom: 7%;
-  left: 67%;
+  left: 65%;
   width: 40%;
 }
 .caja-imagen__botontext .botoncito {
@@ -176,6 +200,10 @@ main {
   font-size: 0.95rem;
 }
 
+.size-color {
+  font-weight: 200;
+}
+
 .radial {
   width: 20px;
   height: 20px;
@@ -235,10 +263,6 @@ main {
   .header__items {
     margin-top: 60px;
     font-size: 1rem;
-  }
-  .banner_season__image {
-    height: 175px;
-    width: 100%;
   }
   .caja-about--texto {
     font-size: 1.2rem;
