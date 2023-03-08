@@ -1,0 +1,33 @@
+.descripcion_nombre {
+  color: $verde-claro;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 10px;
+
+  .size-color__talles {
+    font-family: $fuente;
+    font-weight: 200;
+    font-size: 0.95rem;
+  }
+}
+
+.radial {
+  width: 20px;
+  height: 20px;
+}
+
+.verde {
+  accent-color: $verde-claro;
+}
+
+.negro {
+  accent-color: black;
+}
+
+.marron {
+  accent-color: #664b35;
+}
+
+.gris {
+  accent-color: #5a5757;
+}

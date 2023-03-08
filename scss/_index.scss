@@ -1,0 +1,113 @@
+.banner_season__image {
+  height: 85px;
+  width: 100%;
+}
+.banner-season__typo {
+  font-weight: 400;
+}
+
+.caja-imagen {
+  position: relative;
+
+  &__botontext {
+    position: absolute;
+    bottom: 7%;
+    left: 67%;
+    width: 40%;
+
+    .botoncito {
+      transition: all 3s ease;
+      &:hover {
+        @include boton-hover($verde-claro);
+      }
+    }
+  }
+}
+
+.caja-about {
+  flex: 1;
+
+  &__titulo {
+    color: $verde-oscuro;
+  }
+}
+
+.banner {
+  background-image: linear-gradient(to bottom, $verde-claro, $verde-oscuro 50%);
+
+  &__texto--sale {
+    padding: 0;
+    margin: 0 0 0 15px;
+
+    li {
+      list-style: none;
+      color: #484848;
+      font-size: 50px;
+      letter-spacing: 15px;
+      animation: iluminar 1s linear infinite;
+    }
+  }
+}
+
+@keyframes iluminar {
+  0% {
+    color: #484848;
+    text-shadow: none;
+  }
+  50% {
+    color: white;
+    text-shadow: 0 0 7px #ebebea, 0 0 50px #d8d7d6;
+  }
+  100% {
+    color: white;
+    text-shadow: 0 0 7px #ebebea, 0 0 50px #d8d7d6;
+  }
+}
+
+.boton-shop {
+  margin-top: 10px;
+  padding: 7px 15px;
+  text-decoration: none;
+  color: $verde-claro;
+  font-size: 15px;
+  font-weight: 400;
+  border: 2px solid $verde-claro;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $verde-claro;
+    z-index: -1;
+    transform: translatex(-100%);
+    transition: all 1s;
+  }
+
+  &:hover:before {
+    transform: translatex(0%);
+  }
+
+  &:hover {
+    color: white;
+  }
+}
+
+.newsletter__titulo {
+  color: $verde-oscuro;
+}
+
+.caja-email__email {
+  width: 200px;
+  height: 28px;
+}
+
+.boton-enviar:hover {
+  transition: all 3s ease;
+  @include boton-hover($verde-claro);
+}

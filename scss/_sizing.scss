@@ -1,0 +1,14 @@
+.subtitulo {
+  color: $verde-oscuro;
+  font-size: 1.2rem;
+}
+
+.tabla {
+  margin: 0 auto;
+
+  td,
+  th {
+    text-align: center;
+    font-size: 15px;
+  }
+}
