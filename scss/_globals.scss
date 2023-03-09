@@ -51,6 +51,15 @@ main {
     color: $gris;
     font-size: 10px;
   }
+
+  .ig:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+  }
+  .fb:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+  }
 }
 /* paginas */
 

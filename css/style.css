@@ -45,6 +45,14 @@ main {
   color: #c0c0c0;
   font-size: 10px;
 }
+.footer .ig:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
+.footer .fb:hover {
+  transform: scale(1.1);
+  transition: 300ms;
+}
 
 /* paginas */
 .titulo-paginas {
@@ -198,10 +206,6 @@ main {
   font-family: "Heebo", sans-serif;
   font-weight: 200;
   font-size: 0.95rem;
-}
-
-.size-color {
-  font-weight: 200;
 }
 
 .radial {
