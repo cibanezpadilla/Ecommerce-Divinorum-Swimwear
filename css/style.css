@@ -14,7 +14,7 @@ img {
   grid-template-areas: "header" "main" "footer";
 }
 
-main {
+.main {
   grid-area: main;
 }
 
